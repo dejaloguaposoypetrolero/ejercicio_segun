@@ -1,0 +1,51 @@
+Proceso modista
+	definir a,b, pulg, metros Como Real;
+	Escribir "Ingrese medida en metros";
+	Leer a;
+	pulg<-0.0254;
+	b<-a/pulg;
+	escribir "  Cantidad de pulgadas:" ,b;
+FinProceso
+
+
+Proceso num_pos
+	definir a,b Como Entero;
+	Escribir "ingrese valor a evaluar";
+	leer a;
+	Si a>0 EntoncesProceso num_pos_neg
+	definir a,b,c Como Entero;
+	Escribir "ingrese valor a evaluar";
+	leer a;
+	Si a>0 Entonces
+		Escribir " El valor es positivo";
+	SiNo
+		si a<0	Entonces 
+			escribir "el valor es negativo";
+			
+		FinSi
+		
+		
+		
+	FinSi
+FinProceso
+		Escribir " El valor es positivo";
+	FinSi
+FinProceso
+
+Proceso num_pos_neg
+	definir a,b,c Como Entero;
+	Escribir "ingrese valor a evaluar";
+	leer a;
+	Si a>0 Entonces
+		Escribir " El valor es positivo";
+	SiNo
+		si a<0	Entonces 
+			escribir "el valor es negativo";
+			
+		FinSi
+		
+		
+		
+	FinSi
+FinProceso
+
